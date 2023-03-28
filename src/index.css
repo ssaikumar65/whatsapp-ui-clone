@@ -1,0 +1,32 @@
+:root {
+  --primary: #00a884;
+  --secondary: #0a1014;
+  --bglight: #202c33;
+  --bgdark: #111b21;
+  --bgxlight: #2a3942;
+  --icon: #7b8a94;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bglight);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

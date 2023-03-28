@@ -1,0 +1,131 @@
+.login-body,
+.card,
+.qrcode,
+.details {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  width: 100%;
+}
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 220px,
+    var(--secondary) 220px,
+    var(--secondary)
+  );
+}
+
+.login-body > span {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 70%;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  display: flex;
+}
+
+.card > .details {
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 100px 20px;
+  gap: 30px;
+}
+
+.details > ol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.details > ol > li {
+  margin-top: 20px;
+}
+
+.details > span {
+  font-size: 24px;
+  width: 100%;
+}
+
+.card > .qrcode {
+  width: 50%;
+  justify-content: center;
+  height: 100%;
+}
+
+.qrcode > img {
+  width: 300px;
+  height: 300px;
+}
+
+.details > .button {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--secondary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.details > .button:hover {
+  background-color: var(--primary);
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+  .login-body > span {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    flex-direction: column;
+  }
+  .card > .details,
+  .card > .qrcode {
+    width: 100%;
+    padding: 30px;
+  }
+  .details > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
